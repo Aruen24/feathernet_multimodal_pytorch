@@ -1,3 +1,5 @@
+# feathernet_multimodal_pytorch
+```shell
 #source activate py36_torch
 
 #FeatherNet_m.py中修改block 中Relu6为h-swish 84、95、101行
@@ -22,7 +24,7 @@ python trian_ir_liveness.py
 #修改trian_rgb_ir_liveness.py或者train_rgb_ir_liveness_cbam.py中28行default改为4
 
 
-# pytorch 1.7.1版本训练报异常，降到1.6.0训练正常
+#pytorch 1.7.1版本训练报异常，降到1.6.0训练正常
 
 
 #test
@@ -36,4 +38,4 @@ python evaluate_3dliveness_ir_datasets.py  #测试ir数据
 #onnx转换,转换后得到的onnx模型做python -m onnxsim后会多出tile算子，在君正上转换模型失败，可能是onnx-simplifier版本原因，君正平台上转换模型最好不要做优化，转换工具内部也都会优化图结构
 python convert_to_onnx.py
 python convert_to_onnx_multimode.py
-
+```
