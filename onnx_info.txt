@@ -1,0 +1,440 @@
+ssh://zhangyan@192.168.66.109:22/usr/local/anaconda3/envs/ai/bin/python3 -u /home/data01_disk/zhangyan/code/feathernet_multimodal_pytorch/convert_to_onnx.py
+Loading pretrained model from /home/data03_disk/YZhang/multimodal_training_record/model/1215_0955/Feathernet_91.pkl
+remove prefix 'module.'
+Missing keys:0
+Unused checkpoint keys:0
+Used keys:251
+Finished loading model!
+==> Exporting model to ONNX format at '/home/data03_disk/YZhang/multimodal_training_record/freeze/liveness_multimodal.onnx'
+graph(%input0 : Float(1, 2, 224, 224),
+      %1 : Float(32, 2, 3, 3),
+      %2 : Float(32),
+      %3 : Float(32),
+      %4 : Float(32),
+      %5 : Float(32),
+      %6 : Long(),
+      %7 : Float(32),
+      %8 : Float(32),
+      %9 : Float(32),
+      %10 : Float(32),
+      %11 : Long(),
+      %12 : Float(16, 32, 1, 1),
+      %13 : Float(32, 1, 3, 3),
+      %14 : Float(32),
+      %15 : Float(32),
+      %16 : Float(32),
+      %17 : Float(32),
+      %18 : Long(),
+      %19 : Float(16, 32, 1, 1),
+      %20 : Float(16),
+      %21 : Float(16),
+      %22 : Float(16),
+      %23 : Float(16),
+      %24 : Long(),
+      %25 : Float(2, 16, 1, 1),
+      %26 : Float(16, 2, 1, 1),
+      %27 : Float(16),
+      %28 : Float(16),
+      %29 : Float(16),
+      %30 : Float(16),
+      %31 : Long(),
+      %32 : Float(32, 16, 1, 1),
+      %33 : Float(96, 16, 1, 1),
+      %34 : Float(96),
+      %35 : Float(96),
+      %36 : Float(96),
+      %37 : Float(96),
+      %38 : Long(),
+      %39 : Float(96, 1, 3, 3),
+      %40 : Float(96),
+      %41 : Float(96),
+      %42 : Float(96),
+      %43 : Float(96),
+      %44 : Long(),
+      %45 : Float(32, 96, 1, 1),
+      %46 : Float(32),
+      %47 : Float(32),
+      %48 : Float(32),
+      %49 : Float(32),
+      %50 : Long(),
+      %51 : Float(192, 32, 1, 1),
+      %52 : Float(192),
+      %53 : Float(192),
+      %54 : Float(192),
+      %55 : Float(192),
+      %56 : Long(),
+      %57 : Float(192, 1, 3, 3),
+      %58 : Float(192),
+      %59 : Float(192),
+      %60 : Float(192),
+      %61 : Float(192),
+      %62 : Long(),
+      %63 : Float(32, 192, 1, 1),
+      %64 : Float(32),
+      %65 : Float(32),
+      %66 : Float(32),
+      %67 : Float(32),
+      %68 : Long(),
+      %69 : Float(4, 32, 1, 1),
+      %70 : Float(32, 4, 1, 1),
+      %71 : Float(32),
+      %72 : Float(32),
+      %73 : Float(32),
+      %74 : Float(32),
+      %75 : Long(),
+      %76 : Float(48, 32, 1, 1),
+      %77 : Float(192, 32, 1, 1),
+      %78 : Float(192),
+      %79 : Float(192),
+      %80 : Float(192),
+      %81 : Float(192),
+      %82 : Long(),
+      %83 : Float(192, 1, 3, 3),
+      %84 : Float(192),
+      %85 : Float(192),
+      %86 : Float(192),
+      %87 : Float(192),
+      %88 : Long(),
+      %89 : Float(48, 192, 1, 1),
+      %90 : Float(48),
+      %91 : Float(48),
+      %92 : Float(48),
+      %93 : Float(48),
+      %94 : Long(),
+      %95 : Float(288, 48, 1, 1),
+      %96 : Float(288),
+      %97 : Float(288),
+      %98 : Float(288),
+      %99 : Float(288),
+      %100 : Long(),
+      %101 : Float(288, 1, 3, 3),
+      %102 : Float(288),
+      %103 : Float(288),
+      %104 : Float(288),
+      %105 : Float(288),
+      %106 : Long(),
+      %107 : Float(48, 288, 1, 1),
+      %108 : Float(48),
+      %109 : Float(48),
+      %110 : Float(48),
+      %111 : Float(48),
+      %112 : Long(),
+      %113 : Float(288, 48, 1, 1),
+      %114 : Float(288),
+      %115 : Float(288),
+      %116 : Float(288),
+      %117 : Float(288),
+      %118 : Long(),
+      %119 : Float(288, 1, 3, 3),
+      %120 : Float(288),
+      %121 : Float(288),
+      %122 : Float(288),
+      %123 : Float(288),
+      %124 : Long(),
+      %125 : Float(48, 288, 1, 1),
+      %126 : Float(48),
+      %127 : Float(48),
+      %128 : Float(48),
+      %129 : Float(48),
+      %130 : Long(),
+      %131 : Float(288, 48, 1, 1),
+      %132 : Float(288),
+      %133 : Float(288),
+      %134 : Float(288),
+      %135 : Float(288),
+      %136 : Long(),
+      %137 : Float(288, 1, 3, 3),
+      %138 : Float(288),
+      %139 : Float(288),
+      %140 : Float(288),
+      %141 : Float(288),
+      %142 : Long(),
+      %143 : Float(48, 288, 1, 1),
+      %144 : Float(48),
+      %145 : Float(48),
+      %146 : Float(48),
+      %147 : Float(48),
+      %148 : Long(),
+      %149 : Float(288, 48, 1, 1),
+      %150 : Float(288),
+      %151 : Float(288),
+      %152 : Float(288),
+      %153 : Float(288),
+      %154 : Long(),
+      %155 : Float(288, 1, 3, 3),
+      %156 : Float(288),
+      %157 : Float(288),
+      %158 : Float(288),
+      %159 : Float(288),
+      %160 : Long(),
+      %161 : Float(48, 288, 1, 1),
+      %162 : Float(48),
+      %163 : Float(48),
+      %164 : Float(48),
+      %165 : Float(48),
+      %166 : Long(),
+      %167 : Float(288, 48, 1, 1),
+      %168 : Float(288),
+      %169 : Float(288),
+      %170 : Float(288),
+      %171 : Float(288),
+      %172 : Long(),
+      %173 : Float(288, 1, 3, 3),
+      %174 : Float(288),
+      %175 : Float(288),
+      %176 : Float(288),
+      %177 : Float(288),
+      %178 : Long(),
+      %179 : Float(48, 288, 1, 1),
+      %180 : Float(48),
+      %181 : Float(48),
+      %182 : Float(48),
+      %183 : Float(48),
+      %184 : Long(),
+      %185 : Float(6, 48, 1, 1),
+      %186 : Float(48, 6, 1, 1),
+      %187 : Float(48),
+      %188 : Float(48),
+      %189 : Float(48),
+      %190 : Float(48),
+      %191 : Long(),
+      %192 : Float(64, 48, 1, 1),
+      %193 : Float(288, 48, 1, 1),
+      %194 : Float(288),
+      %195 : Float(288),
+      %196 : Float(288),
+      %197 : Float(288),
+      %198 : Long(),
+      %199 : Float(288, 1, 3, 3),
+      %200 : Float(288),
+      %201 : Float(288),
+      %202 : Float(288),
+      %203 : Float(288),
+      %204 : Long(),
+      %205 : Float(64, 288, 1, 1),
+      %206 : Float(64),
+      %207 : Float(64),
+      %208 : Float(64),
+      %209 : Float(64),
+      %210 : Long(),
+      %211 : Float(384, 64, 1, 1),
+      %212 : Float(384),
+      %213 : Float(384),
+      %214 : Float(384),
+      %215 : Float(384),
+      %216 : Long(),
+      %217 : Float(384, 1, 3, 3),
+      %218 : Float(384),
+      %219 : Float(384),
+      %220 : Float(384),
+      %221 : Float(384),
+      %222 : Long(),
+      %223 : Float(64, 384, 1, 1),
+      %224 : Float(64),
+      %225 : Float(64),
+      %226 : Float(64),
+      %227 : Float(64),
+      %228 : Long(),
+      %229 : Float(384, 64, 1, 1),
+      %230 : Float(384),
+      %231 : Float(384),
+      %232 : Float(384),
+      %233 : Float(384),
+      %234 : Long(),
+      %235 : Float(384, 1, 3, 3),
+      %236 : Float(384),
+      %237 : Float(384),
+      %238 : Float(384),
+      %239 : Float(384),
+      %240 : Long(),
+      %241 : Float(64, 384, 1, 1),
+      %242 : Float(64),
+      %243 : Float(64),
+      %244 : Float(64),
+      %245 : Float(64),
+      %246 : Long(),
+      %247 : Float(8, 64, 1, 1),
+      %248 : Float(64, 8, 1, 1),
+      %249 : Float(64, 1, 3, 3),
+      %250 : Float(2, 64),
+      %251 : Float(2)):
+  %252 : Float(1, 32, 112, 112) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%input0, %1), scope: FeatherNet/Sequential[features]/Sequential[0]/Conv2d[0]
+  %253 : Float(1, 32, 112, 112) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%252, %2, %3, %4, %5), scope: FeatherNet/Sequential[features]/Sequential[0]/BatchNorm2d[1]
+  %254 : Float(1, 32, 112, 112) = onnx::Clip[max=6, min=0](%253), scope: FeatherNet/Sequential[features]/Sequential[0]/ReLU6[2]
+  %255 : Tensor = onnx::Pad[mode="constant", pads=[0, 0, 0, 0, 0, 0, 0, 0], value=0](%254), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[downsample]/AvgPool2d[0]
+  %256 : Float(1, 32, 56, 56) = onnx::AveragePool[kernel_shape=[2, 2], pads=[0, 0, 0, 0], strides=[2, 2]](%255), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[downsample]/AvgPool2d[0]
+  %257 : Float(1, 32, 56, 56) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%256, %7, %8, %9, %10), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[downsample]/BatchNorm2d[1]
+  %258 : Float(1, 16, 56, 56) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%257, %12), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[downsample]/Conv2d[2]
+  %259 : Float(1, 32, 56, 56) = onnx::Conv[dilations=[1, 1], group=32, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%254, %13), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[conv]/Conv2d[0]
+  %260 : Float(1, 32, 56, 56) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%259, %14, %15, %16, %17), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[conv]/BatchNorm2d[1]
+  %261 : Float(1, 32, 56, 56) = onnx::Clip[max=6, min=0](%260), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[conv]/ReLU6[2]
+  %262 : Float(1, 16, 56, 56) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%261, %19), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[conv]/Conv2d[3]
+  %263 : Float(1, 16, 56, 56) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%262, %20, %21, %22, %23), scope: FeatherNet/Sequential[features]/InvertedResidual[1]/Sequential[conv]/BatchNorm2d[4]
+  %264 : Float(1, 16, 56, 56) = onnx::Add(%258, %263), scope: FeatherNet/Sequential[features]/InvertedResidual[1]
+  %265 : Float(1, 16, 1, 1) = onnx::GlobalAveragePool(%264), scope: FeatherNet/Sequential[features]/SELayer1[2]/Sequential[se]/AdaptiveAvgPool2d[0]
+  %266 : Float(1, 2, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%265, %25), scope: FeatherNet/Sequential[features]/SELayer1[2]/Sequential[se]/Conv2d[1]
+  %267 : Float(1, 2, 1, 1) = onnx::Relu(%266), scope: FeatherNet/Sequential[features]/SELayer1[2]/Sequential[se]/ReLU[2]
+  %268 : Float(1, 16, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%267, %26), scope: FeatherNet/Sequential[features]/SELayer1[2]/Sequential[se]/Conv2d[3]
+  %269 : Tensor = onnx::Constant[value={3}]()
+  %270 : Tensor = onnx::Add(%268, %269)
+  %271 : Float(1, 16, 1, 1) = onnx::Clip[max=6, min=0](%270), scope: FeatherNet/Sequential[features]/SELayer1[2]/Sequential[se]/hsigmoid[4]
+  %272 : Tensor = onnx::Constant[value={0.166667}]()
+  %273 : Tensor = onnx::Mul(%271, %272)
+  %274 : Float(1, 16, 56, 56) = onnx::Mul(%264, %273), scope: FeatherNet/Sequential[features]/SELayer1[2]
+  %275 : Tensor = onnx::Pad[mode="constant", pads=[0, 0, 0, 0, 0, 0, 0, 0], value=0](%274), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[downsample]/AvgPool2d[0]
+  %276 : Float(1, 16, 28, 28) = onnx::AveragePool[kernel_shape=[2, 2], pads=[0, 0, 0, 0], strides=[2, 2]](%275), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[downsample]/AvgPool2d[0]
+  %277 : Float(1, 16, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%276, %27, %28, %29, %30), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[downsample]/BatchNorm2d[1]
+  %278 : Float(1, 32, 28, 28) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%277, %32), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[downsample]/Conv2d[2]
+  %279 : Float(1, 96, 56, 56) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%274, %33), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/Conv2d[0]
+  %280 : Float(1, 96, 56, 56) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%279, %34, %35, %36, %37), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/BatchNorm2d[1]
+  %281 : Float(1, 96, 56, 56) = onnx::Clip[max=6, min=0](%280), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/ReLU6[2]
+  %282 : Float(1, 96, 28, 28) = onnx::Conv[dilations=[1, 1], group=96, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%281, %39), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/Conv2d[3]
+  %283 : Float(1, 96, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%282, %40, %41, %42, %43), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/BatchNorm2d[4]
+  %284 : Float(1, 96, 28, 28) = onnx::Clip[max=6, min=0](%283), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/ReLU6[5]
+  %285 : Float(1, 32, 28, 28) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%284, %45), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/Conv2d[6]
+  %286 : Float(1, 32, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%285, %46, %47, %48, %49), scope: FeatherNet/Sequential[features]/InvertedResidual[3]/Sequential[conv]/BatchNorm2d[7]
+  %287 : Float(1, 32, 28, 28) = onnx::Add(%278, %286), scope: FeatherNet/Sequential[features]/InvertedResidual[3]
+  %288 : Float(1, 192, 28, 28) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%287, %51), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/Conv2d[0]
+  %289 : Float(1, 192, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%288, %52, %53, %54, %55), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/BatchNorm2d[1]
+  %290 : Float(1, 192, 28, 28) = onnx::Clip[max=6, min=0](%289), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/ReLU6[2]
+  %291 : Float(1, 192, 28, 28) = onnx::Conv[dilations=[1, 1], group=192, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%290, %57), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/Conv2d[3]
+  %292 : Float(1, 192, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%291, %58, %59, %60, %61), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/BatchNorm2d[4]
+  %293 : Float(1, 192, 28, 28) = onnx::Clip[max=6, min=0](%292), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/ReLU6[5]
+  %294 : Float(1, 32, 28, 28) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%293, %63), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/Conv2d[6]
+  %295 : Float(1, 32, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%294, %64, %65, %66, %67), scope: FeatherNet/Sequential[features]/InvertedResidual[4]/Sequential[conv]/BatchNorm2d[7]
+  %296 : Float(1, 32, 28, 28) = onnx::Add(%287, %295), scope: FeatherNet/Sequential[features]/InvertedResidual[4]
+  %297 : Float(1, 32, 1, 1) = onnx::GlobalAveragePool(%296), scope: FeatherNet/Sequential[features]/SELayer1[5]/Sequential[se]/AdaptiveAvgPool2d[0]
+  %298 : Float(1, 4, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%297, %69), scope: FeatherNet/Sequential[features]/SELayer1[5]/Sequential[se]/Conv2d[1]
+  %299 : Float(1, 4, 1, 1) = onnx::Relu(%298), scope: FeatherNet/Sequential[features]/SELayer1[5]/Sequential[se]/ReLU[2]
+  %300 : Float(1, 32, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%299, %70), scope: FeatherNet/Sequential[features]/SELayer1[5]/Sequential[se]/Conv2d[3]
+  %301 : Tensor = onnx::Constant[value={3}]()
+  %302 : Tensor = onnx::Add(%300, %301)
+  %303 : Float(1, 32, 1, 1) = onnx::Clip[max=6, min=0](%302), scope: FeatherNet/Sequential[features]/SELayer1[5]/Sequential[se]/hsigmoid[4]
+  %304 : Tensor = onnx::Constant[value={0.166667}]()
+  %305 : Tensor = onnx::Mul(%303, %304)
+  %306 : Float(1, 32, 28, 28) = onnx::Mul(%296, %305), scope: FeatherNet/Sequential[features]/SELayer1[5]
+  %307 : Tensor = onnx::Pad[mode="constant", pads=[0, 0, 0, 0, 0, 0, 0, 0], value=0](%306), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[downsample]/AvgPool2d[0]
+  %308 : Float(1, 32, 14, 14) = onnx::AveragePool[kernel_shape=[2, 2], pads=[0, 0, 0, 0], strides=[2, 2]](%307), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[downsample]/AvgPool2d[0]
+  %309 : Float(1, 32, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%308, %71, %72, %73, %74), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[downsample]/BatchNorm2d[1]
+  %310 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%309, %76), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[downsample]/Conv2d[2]
+  %311 : Float(1, 192, 28, 28) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%306, %77), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/Conv2d[0]
+  %312 : Float(1, 192, 28, 28) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%311, %78, %79, %80, %81), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/BatchNorm2d[1]
+  %313 : Float(1, 192, 28, 28) = onnx::Clip[max=6, min=0](%312), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/ReLU6[2]
+  %314 : Float(1, 192, 14, 14) = onnx::Conv[dilations=[1, 1], group=192, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%313, %83), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/Conv2d[3]
+  %315 : Float(1, 192, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%314, %84, %85, %86, %87), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/BatchNorm2d[4]
+  %316 : Float(1, 192, 14, 14) = onnx::Clip[max=6, min=0](%315), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/ReLU6[5]
+  %317 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%316, %89), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/Conv2d[6]
+  %318 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%317, %90, %91, %92, %93), scope: FeatherNet/Sequential[features]/InvertedResidual[6]/Sequential[conv]/BatchNorm2d[7]
+  %319 : Float(1, 48, 14, 14) = onnx::Add(%310, %318), scope: FeatherNet/Sequential[features]/InvertedResidual[6]
+  %320 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%319, %95), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/Conv2d[0]
+  %321 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%320, %96, %97, %98, %99), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/BatchNorm2d[1]
+  %322 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%321), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/ReLU6[2]
+  %323 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%322, %101), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/Conv2d[3]
+  %324 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%323, %102, %103, %104, %105), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/BatchNorm2d[4]
+  %325 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%324), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/ReLU6[5]
+  %326 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%325, %107), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/Conv2d[6]
+  %327 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%326, %108, %109, %110, %111), scope: FeatherNet/Sequential[features]/InvertedResidual[7]/Sequential[conv]/BatchNorm2d[7]
+  %328 : Float(1, 48, 14, 14) = onnx::Add(%319, %327), scope: FeatherNet/Sequential[features]/InvertedResidual[7]
+  %329 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%328, %113), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/Conv2d[0]
+  %330 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%329, %114, %115, %116, %117), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/BatchNorm2d[1]
+  %331 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%330), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/ReLU6[2]
+  %332 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%331, %119), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/Conv2d[3]
+  %333 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%332, %120, %121, %122, %123), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/BatchNorm2d[4]
+  %334 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%333), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/ReLU6[5]
+  %335 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%334, %125), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/Conv2d[6]
+  %336 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%335, %126, %127, %128, %129), scope: FeatherNet/Sequential[features]/InvertedResidual[8]/Sequential[conv]/BatchNorm2d[7]
+  %337 : Float(1, 48, 14, 14) = onnx::Add(%328, %336), scope: FeatherNet/Sequential[features]/InvertedResidual[8]
+  %338 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%337, %131), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/Conv2d[0]
+  %339 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%338, %132, %133, %134, %135), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/BatchNorm2d[1]
+  %340 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%339), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/ReLU6[2]
+  %341 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%340, %137), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/Conv2d[3]
+  %342 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%341, %138, %139, %140, %141), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/BatchNorm2d[4]
+  %343 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%342), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/ReLU6[5]
+  %344 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%343, %143), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/Conv2d[6]
+  %345 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%344, %144, %145, %146, %147), scope: FeatherNet/Sequential[features]/InvertedResidual[9]/Sequential[conv]/BatchNorm2d[7]
+  %346 : Float(1, 48, 14, 14) = onnx::Add(%337, %345), scope: FeatherNet/Sequential[features]/InvertedResidual[9]
+  %347 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%346, %149), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/Conv2d[0]
+  %348 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%347, %150, %151, %152, %153), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/BatchNorm2d[1]
+  %349 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%348), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/ReLU6[2]
+  %350 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%349, %155), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/Conv2d[3]
+  %351 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%350, %156, %157, %158, %159), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/BatchNorm2d[4]
+  %352 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%351), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/ReLU6[5]
+  %353 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%352, %161), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/Conv2d[6]
+  %354 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%353, %162, %163, %164, %165), scope: FeatherNet/Sequential[features]/InvertedResidual[10]/Sequential[conv]/BatchNorm2d[7]
+  %355 : Float(1, 48, 14, 14) = onnx::Add(%346, %354), scope: FeatherNet/Sequential[features]/InvertedResidual[10]
+  %356 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%355, %167), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/Conv2d[0]
+  %357 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%356, %168, %169, %170, %171), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/BatchNorm2d[1]
+  %358 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%357), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/ReLU6[2]
+  %359 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%358, %173), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/Conv2d[3]
+  %360 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%359, %174, %175, %176, %177), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/BatchNorm2d[4]
+  %361 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%360), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/ReLU6[5]
+  %362 : Float(1, 48, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%361, %179), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/Conv2d[6]
+  %363 : Float(1, 48, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%362, %180, %181, %182, %183), scope: FeatherNet/Sequential[features]/InvertedResidual[11]/Sequential[conv]/BatchNorm2d[7]
+  %364 : Float(1, 48, 14, 14) = onnx::Add(%355, %363), scope: FeatherNet/Sequential[features]/InvertedResidual[11]
+  %365 : Float(1, 48, 1, 1) = onnx::GlobalAveragePool(%364), scope: FeatherNet/Sequential[features]/SELayer1[12]/Sequential[se]/AdaptiveAvgPool2d[0]
+  %366 : Float(1, 6, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%365, %185), scope: FeatherNet/Sequential[features]/SELayer1[12]/Sequential[se]/Conv2d[1]
+  %367 : Float(1, 6, 1, 1) = onnx::Relu(%366), scope: FeatherNet/Sequential[features]/SELayer1[12]/Sequential[se]/ReLU[2]
+  %368 : Float(1, 48, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%367, %186), scope: FeatherNet/Sequential[features]/SELayer1[12]/Sequential[se]/Conv2d[3]
+  %369 : Tensor = onnx::Constant[value={3}]()
+  %370 : Tensor = onnx::Add(%368, %369)
+  %371 : Float(1, 48, 1, 1) = onnx::Clip[max=6, min=0](%370), scope: FeatherNet/Sequential[features]/SELayer1[12]/Sequential[se]/hsigmoid[4]
+  %372 : Tensor = onnx::Constant[value={0.166667}]()
+  %373 : Tensor = onnx::Mul(%371, %372)
+  %374 : Float(1, 48, 14, 14) = onnx::Mul(%364, %373), scope: FeatherNet/Sequential[features]/SELayer1[12]
+  %375 : Tensor = onnx::Pad[mode="constant", pads=[0, 0, 0, 0, 0, 0, 0, 0], value=0](%374), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[downsample]/AvgPool2d[0]
+  %376 : Float(1, 48, 7, 7) = onnx::AveragePool[kernel_shape=[2, 2], pads=[0, 0, 0, 0], strides=[2, 2]](%375), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[downsample]/AvgPool2d[0]
+  %377 : Float(1, 48, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%376, %187, %188, %189, %190), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[downsample]/BatchNorm2d[1]
+  %378 : Float(1, 64, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%377, %192), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[downsample]/Conv2d[2]
+  %379 : Float(1, 288, 14, 14) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%374, %193), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/Conv2d[0]
+  %380 : Float(1, 288, 14, 14) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%379, %194, %195, %196, %197), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/BatchNorm2d[1]
+  %381 : Float(1, 288, 14, 14) = onnx::Clip[max=6, min=0](%380), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/ReLU6[2]
+  %382 : Float(1, 288, 7, 7) = onnx::Conv[dilations=[1, 1], group=288, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%381, %199), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/Conv2d[3]
+  %383 : Float(1, 288, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%382, %200, %201, %202, %203), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/BatchNorm2d[4]
+  %384 : Float(1, 288, 7, 7) = onnx::Clip[max=6, min=0](%383), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/ReLU6[5]
+  %385 : Float(1, 64, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%384, %205), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/Conv2d[6]
+  %386 : Float(1, 64, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%385, %206, %207, %208, %209), scope: FeatherNet/Sequential[features]/InvertedResidual[13]/Sequential[conv]/BatchNorm2d[7]
+  %387 : Float(1, 64, 7, 7) = onnx::Add(%378, %386), scope: FeatherNet/Sequential[features]/InvertedResidual[13]
+  %388 : Float(1, 384, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%387, %211), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/Conv2d[0]
+  %389 : Float(1, 384, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%388, %212, %213, %214, %215), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/BatchNorm2d[1]
+  %390 : Float(1, 384, 7, 7) = onnx::Clip[max=6, min=0](%389), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/ReLU6[2]
+  %391 : Float(1, 384, 7, 7) = onnx::Conv[dilations=[1, 1], group=384, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%390, %217), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/Conv2d[3]
+  %392 : Float(1, 384, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%391, %218, %219, %220, %221), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/BatchNorm2d[4]
+  %393 : Float(1, 384, 7, 7) = onnx::Clip[max=6, min=0](%392), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/ReLU6[5]
+  %394 : Float(1, 64, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%393, %223), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/Conv2d[6]
+  %395 : Float(1, 64, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%394, %224, %225, %226, %227), scope: FeatherNet/Sequential[features]/InvertedResidual[14]/Sequential[conv]/BatchNorm2d[7]
+  %396 : Float(1, 64, 7, 7) = onnx::Add(%387, %395), scope: FeatherNet/Sequential[features]/InvertedResidual[14]
+  %397 : Float(1, 384, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%396, %229), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/Conv2d[0]
+  %398 : Float(1, 384, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%397, %230, %231, %232, %233), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/BatchNorm2d[1]
+  %399 : Float(1, 384, 7, 7) = onnx::Clip[max=6, min=0](%398), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/ReLU6[2]
+  %400 : Float(1, 384, 7, 7) = onnx::Conv[dilations=[1, 1], group=384, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[1, 1]](%399, %235), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/Conv2d[3]
+  %401 : Float(1, 384, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%400, %236, %237, %238, %239), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/BatchNorm2d[4]
+  %402 : Float(1, 384, 7, 7) = onnx::Clip[max=6, min=0](%401), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/ReLU6[5]
+  %403 : Float(1, 64, 7, 7) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%402, %241), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/Conv2d[6]
+  %404 : Float(1, 64, 7, 7) = onnx::BatchNormalization[epsilon=1e-05, momentum=0.9](%403, %242, %243, %244, %245), scope: FeatherNet/Sequential[features]/InvertedResidual[15]/Sequential[conv]/BatchNorm2d[7]
+  %405 : Float(1, 64, 7, 7) = onnx::Add(%396, %404), scope: FeatherNet/Sequential[features]/InvertedResidual[15]
+  %406 : Float(1, 64, 1, 1) = onnx::GlobalAveragePool(%405), scope: FeatherNet/Sequential[features]/SELayer1[16]/Sequential[se]/AdaptiveAvgPool2d[0]
+  %407 : Float(1, 8, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%406, %247), scope: FeatherNet/Sequential[features]/SELayer1[16]/Sequential[se]/Conv2d[1]
+  %408 : Float(1, 8, 1, 1) = onnx::Relu(%407), scope: FeatherNet/Sequential[features]/SELayer1[16]/Sequential[se]/ReLU[2]
+  %409 : Float(1, 64, 1, 1) = onnx::Conv[dilations=[1, 1], group=1, kernel_shape=[1, 1], pads=[0, 0, 0, 0], strides=[1, 1]](%408, %248), scope: FeatherNet/Sequential[features]/SELayer1[16]/Sequential[se]/Conv2d[3]
+  %410 : Tensor = onnx::Constant[value={3}]()
+  %411 : Tensor = onnx::Add(%409, %410)
+  %412 : Float(1, 64, 1, 1) = onnx::Clip[max=6, min=0](%411), scope: FeatherNet/Sequential[features]/SELayer1[16]/Sequential[se]/hsigmoid[4]
+  %413 : Tensor = onnx::Constant[value={0.166667}]()
+  %414 : Tensor = onnx::Mul(%412, %413)
+  %415 : Float(1, 64, 7, 7) = onnx::Mul(%405, %414), scope: FeatherNet/Sequential[features]/SELayer1[16]
+  %416 : Float(1, 64, 4, 4) = onnx::Conv[dilations=[1, 1], group=64, kernel_shape=[3, 3], pads=[1, 1, 1, 1], strides=[2, 2]](%415, %249), scope: FeatherNet/Sequential[final_DW]/Conv2d[0]
+  %417 : Float(1, 64, 1, 1) = onnx::GlobalAveragePool(%416), scope: FeatherNet/AdaptiveAvgPool2d[avg]
+  %418 : Long() = onnx::Constant[value={0}](), scope: FeatherNet/Flatten[flatten]
+  %419 : Tensor = onnx::Shape(%417), scope: FeatherNet/Flatten[flatten]
+  %420 : Long() = onnx::Gather[axis=0](%419, %418), scope: FeatherNet/Flatten[flatten]
+  %421 : Long() = onnx::Constant[value={-1}](), scope: FeatherNet/Flatten[flatten]
+  %422 : Tensor = onnx::Unsqueeze[axes=[0]](%420)
+  %423 : Tensor = onnx::Unsqueeze[axes=[0]](%421)
+  %424 : Tensor = onnx::Concat[axis=0](%422, %423)
+  %425 : Float(1, 64) = onnx::Reshape(%417, %424), scope: FeatherNet/Sequential[logits]/Dropout[0]
+  %output0 : Float(1, 2) = onnx::Gemm[alpha=1, beta=1, transB=1](%425, %250, %251), scope: FeatherNet/Sequential[logits]/Dropout[0]
+  %427 : Float(1, 2) = onnx::Softmax[axis=1](%output0), scope: FeatherNet/Softmax[predictions]
+  return (%output0, %427)
+
+
+Process finished with exit code 0
